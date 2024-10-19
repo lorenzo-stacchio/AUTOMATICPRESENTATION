@@ -1,5 +1,5 @@
 import os 
-from tts_google import generate_audio
+from tts_module import generate_audio, SyntheticAudioTypes
 from pydub import AudioSegment
 from moviepy.editor import *
 
@@ -67,12 +67,14 @@ dict_Diapositivatext = {
 if __name__=="__main__":
     audio_dir = "audio/"
     video_clips = []
+    audio_method = SyntheticAudioTypes.tts_coqui
     for k,v in dict_Diapositivatext.items():
         image_path = f"IDEATE_XR_2024/{k}.PNG" 
-        audio_path = f"audio/{k}.mp3" 
+        audio_path = f"audio/{k}"
+        
         assert os.path.exists(image_path)
         # print(image_path, k,v)
-        generate_audio(text=v["content"], filename = audio_path)
+        audio_path = generate_audio(text=v["content"], filename = audio_path, method = audio_method)
 
         # Load the audio file
         audio = AudioSegment.from_file(audio_path)
