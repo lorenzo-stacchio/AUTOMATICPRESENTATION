@@ -3,3 +3,4 @@ __pycache__/*
 audio/*
 IDEATE_XR_2024/*
 tts/*
+*.mp4
