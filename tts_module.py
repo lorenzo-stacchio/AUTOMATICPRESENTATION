@@ -21,7 +21,7 @@ def generate_audio(text, filename, method:SyntheticAudioTypes):
         tts = TTS(model_name="tts_models/en/vctk/vits", progress_bar=False, gpu=True)
         # List available speakers if the model supports multi-speaker output
         speakers = tts.speakers
-        print("Available speakers:", speakers)
+        # print("Available speakers:", speakers)
         # exit()
         # Select a male speaker by name or index if available
         # You can manually check the list of speakers and choose a male one
