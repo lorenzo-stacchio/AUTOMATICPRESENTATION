@@ -17,7 +17,7 @@ if __name__=="__main__":
     audio_method = SyntheticAudioTypes.tts_coqui
     dict_Diapositivatext = json.load(open(speech_json_path, "r"))
     
-    text_VTT = "WEBVTT + \n\n"
+    text_VTT = "WEBVTT\n\n"
     actual_time = timedelta(hours=0, minutes=0, seconds=0, milliseconds=500)
 
     assert len(dict_Diapositivatext), print(f"Slides should have the same number as speeches in json, instead we have Json n° {len(dict_Diapositivatext)}")

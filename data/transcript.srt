@@ -1,71 +1,92 @@
-WEBVTT
-
-0:00:00.500000 --> 0:00:28.529000
+1
+0:00:00,500000 --> 0:00:28,529000
 Good morning, everyone. My name is Lorenzo Stacchio, and today, I am honored to present our collaborative research titled 'MineVRA: Exploring the Role of Generative AI-Driven Content Development in XR Environments through a Context-Aware Approach.' This project is a joint effort between the University of Macerata and Università Politecnica delle Marche, under the auspices of the Vision Robotics and Artificial Intelligence Laboratory. Our research delves into the integration of Generative Artificial Intelligence within Extended Reality environments to improve immersive content creation.
 
-0:00:28.529000 --> 0:00:55.643000
+2
+0:00:28,529000 --> 0:00:55,643000
 Extended Reality, or XR, is revolutionizing digital experiences. However, one major challenge remains—creating immersive content is time-consuming and often lacks adaptability. Traditional 3D modeling is labor-intensive, and existing databases like Sketchfab do not always provide context-aware assets. Generative AI presents a promising solution, offering automated, adaptive content generation. But how effective is it in real-world applications? That’s what we aim to explore.
 
-0:00:55.643000 --> 0:01:17.554000
+3
+0:00:55,643000 --> 0:01:17,554000
 Previous research has explored text-to-image, image-to-3D, and neural rendering techniques. However, these studies mostly focused on standalone model performance rather than their usability in XR environments. Additionally, while user perception of AI-generated content has been studied, aspects like user satisfaction and awareness of AI-generated assets remain underexplored. This gap motivated our research.
 
-0:01:17.554000 --> 0:01:36.260000
+4
+0:01:17,554000 --> 0:01:36,260000
 Our main motivation is to enable scalable and adaptive 3D content generation for XR applications. We want to understand if AI-generated assets can meet the dynamic needs of users and whether they can replace traditional manual modeling. Furthermore, we introduce a new evaluation framework to compare user perception of AI-generated content against human-made models.
 
-0:01:36.260000 --> 0:01:54.594000
+5
+0:01:36,260000 --> 0:01:54,594000
 To evaluate MineVRA, we designed experiments to answer three key research questions: First, do AI-generated 3D objects provide the same level of authenticity and interest as database models? Second, does Generative AI enhance functional coherence in immersive environments? And third, can it be effectively integrated into XR workflows?
 
-0:01:54.594000 --> 0:02:07.401000
+6
+0:01:54,594000 --> 0:02:07,401000
 To address these challenges, we developed MineVRA—a Human-in-the-Loop XR framework that integrates Generative AI for both 2D and 3D content creation. Our system allows users to generate context-aware assets interactively within XR environments.
 
-0:02:07.401000 --> 0:02:21.509000
+7
+0:02:07,401000 --> 0:02:21,509000
 MineVRA follows a client-server model. The client is a VR interface where users interact, while the server handles Generative AI inference and database retrieval. We use Stable Diffusion XL for text-to-image generation and InstantMesh for image-to-3D conversion.
 
-0:02:21.509000 --> 0:02:30.717000
+8
+0:02:21,509000 --> 0:02:30,717000
 The content generation pipeline works in three steps: First, users provide a text prompt via keyboard or speech. The system then generates corresponding images based on the prompt.
 
-0:02:30.717000 --> 0:02:37.324000
+9
+0:02:30,717000 --> 0:02:37,324000
 The system generates context-aware images, adapting them to the requested scenario or use case, ensuring coherence with the environment.
 
-0:02:37.324000 --> 0:02:45.766000
+10
+0:02:37,324000 --> 0:02:45,766000
 Users then select their preferred image, and the system converts it into a 3D model. This allows users to interact with their generated objects in the immersive environment.
 
-0:02:45.766000 --> 0:03:57.197000
+11
+0:02:45,766000 --> 0:03:57,197000
 MineVRA is designed to be highly adaptable, enabling seamless integration into various virtual environments. To thoroughly evaluate its effectiveness, we structured our experiments across two distinct environments: an indoor cottage, providing a confined, structured space, and an outdoor forest, offering a more dynamic and unpredictable setting. This dual-environment approach allows us to assess how well AI-generated content adapts to different spatial constraints and user interactions. Participants engaged with three experimental conditions, each focusing on different methods of 3D content generation. First, we tested a fixed prompt approach, where users were asked to generate predefined objects such as a chair, mug, tent, or backpack. This method ensures reproducibility and allows direct comparisons between AI-generated models and those retrieved from Sketchfab. Second, we introduced a free prompt condition, where users were given creative freedom to describe objects in their own words, enabling us to evaluate how well Generative AI adapts to user intent and environmental context. Throughout the experiment, we also examined user interactions with both Generative AI-generated content and Sketchfab-sourced assets, aiming to understand the impact of AI-driven creation on engagement, realism, and overall usability. This structured evaluation provides a first step toward generalizing the role of Generative AI in XR workflows.
 
-0:03:57.197000 --> 0:04:44.222000
+12
+0:03:57,197000 --> 0:04:44,222000
 For our study, we included two distinct virtual environments to thoroughly evaluate the adaptability of AI-generated content across varied spatial contexts. The first is an indoor cottage, which provides a controlled, confined space with structured elements like furniture and walls. This setting allows us to test how well AI-generated objects fit within a predictable environment. The second environment is an outdoor forest, characterized by an open, dynamic space with natural elements such as trees, foliage, and uneven terrain. This environment introduces a higher level of variability and complexity, providing insight into how well the system can generate and integrate objects in more unpredictable and diverse settings. By testing in both of these environments, we can assess how adaptable the AI is to different contexts—one that is more structured and one that is more dynamic and variable—ensuring that our findings can be generalized to a wide range of virtual reality applications.
 
-0:04:44.222000 --> 0:04:57.122000
+13
+0:04:44,222000 --> 0:04:57,122000
 To generate 3D objects, users interacted with two different methods: Generative AI, which created objects dynamically, and Sketchfab search, which provided pre-existing models. Both were conducted anonymously to avoid biases in user perception.
 
-0:04:57.122000 --> 0:06:03.898000
+14
+0:04:57,122000 --> 0:06:03,898000
 To systematically evaluate the performance and adaptability of Generative AI in XR environments, we designed two distinct prompting methods: the Fixed Prompt approach and the Free Prompt approach. The Fixed Prompt method focuses on generating predefined objects, specifically a chair, mug, tent, and backpack. These objects were chosen to ensure reproducibility and controlled comparisons across different conditions. By limiting variability, we can directly assess the consistency and accuracy of AI-generated content compared to pre-existing database models like those from Sketchfab. On the other hand, the Free Prompt approach allows users to generate objects based on their own creativity and needs. Instead of being restricted to a fixed set of objects, participants could describe any item they envisioned, and the system would generate a corresponding 3D model. This method enables us to evaluate how well Generative AI adapts to user intent, context, and creativity, offering deeper insights into context-awareness, user satisfaction, and overall system flexibility.By comparing these two prompting approaches, we gain a comprehensive understanding of both the reproducibility and creative potential of AI-driven content generation in XR environments. This differentiation is crucial in determining the practicality of AI-generated models in structured versus open-ended use cases.
 
-0:06:03.898000 --> 0:06:27.920000
+15
+0:06:03,898000 --> 0:06:27,920000
 To comprehensively evaluate the impact of AI-generated content in XR environments, we developed a structured assessment framework integrating questionnaire-based assessments (explicit quantitative measures), action logging (implicit quantitative measures), and think-aloud protocols (qualitative insights). This mixed-method approach ensures a robust and multidimensional analysis of user experience, capturing both measurable interactions and subjective reflections on engagement, realism, and usability.
 
-0:06:27.920000 --> 0:07:17.453000
+16
+0:06:27,920000 --> 0:07:17,453000
 3D Perception Assessment covers five key areas: user interest, fidelity, satisfaction, and environmental coherence. By measuring these aspects, we aim to understand how well Generative AI performs in terms of engagement, realism, adaptability, and ease of use.  We employed a combination of validated measurement scales and standardized questionnaires to ensure robust and reliable evaluation. For user interest, we used a 4-item scale that captures engagement, effort, and the desire to interact with AI-generated objects. Fidelity, which assesses realism and smoothness, was measured using a 3-item scale, while satisfaction—which also includes variety as a factor—was evaluated using another 4-item scale. To determine how well AI-generated objects integrate into immersive environments, we introduced a 3-item scale for environmental coherence, focusing on how well the generated objects match user requests, fit within the virtual space, and maintain functional alignment.
 
-0:07:17.453000 --> 0:07:49.058000
+17
+0:07:17,453000 --> 0:07:49,058000
 Additionally, usability and workload were assessed using well-established metrics such as the System Usability Scale (SUS) for ease of use, NASA-TLX for workload analysis, and the Technology Acceptance Model (TAM) to gauge how intuitive and beneficial users found the system. Lastly, we incorporated implicit metrics by logging user-object interactions, allowing us to track engagement patterns and further analyze how users interact with AI-generated content. By combining self-reported and system-tracked data, our evaluation ensures a well-rounded understanding of MineVRA’s effectiveness in real-world applications.
 
-0:07:49.058000 --> 0:08:02.295000
+18
+0:07:49,058000 --> 0:08:02,295000
 Results showed that in controlled conditions, AI-generated content was comparable to Sketchfab. However, in open-ended prompts, AI outperformed Sketchfab in user interest and engagement, with users spending more time interacting with AI-generated models.
 
-0:08:02.295000 --> 0:08:14.220000
+19
+0:08:02,295000 --> 0:08:14,220000
 Regarding fidelity and coherence, Sketchfab models had slightly higher realism and smoothness. However, AI-generated models were significantly more adaptable and contextually coherent, making them more functional within immersive environments.
 
-0:08:14.220000 --> 0:08:28.653000
+20
+0:08:14,220000 --> 0:08:28,653000
 In terms of usability and workload, MineVRA received a SUS score of 76.25, indicating positive usability. The NASA-TLX showed moderate workload, while the TAM assessment confirmed that users found the system intuitive and useful for their tasks.
 
-0:08:28.653000 --> 0:08:45.292000
+21
+0:08:28,653000 --> 0:08:45,292000
 Our study highlights that Generative AI significantly enhances creativity and engagement in XR. While Sketchfab remains stronger in terms of fidelity, AI-generated content is more adaptable and better suited for dynamic environments. The ability to generate content contextually improves user experience and interaction.
 
-0:08:45.292000 --> 0:09:02.024000
+22
+0:08:45,292000 --> 0:09:02,024000
 Moving forward, we aim to improve the visual fidelity and efficiency of AI-generated models, expand object categories, and introduce caching mechanisms for faster generation. These enhancements will refine the role of Generative AI in XR. Thank you for your attention, and I’m happy to take any questions.
 
-0:09:02.024000 --> 0:09:06.355000
+23
+0:09:02,024000 --> 0:09:06,355000
 Thank you for your attention, and I’m happy to take any questions.
 
